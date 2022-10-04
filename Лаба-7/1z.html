@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>JS</title>
+<script>
+
+</script>
+</head>
+<body>
+<form>
+<textarea name="usser" id="t1" cols="35" rows="10">Факультет информационных технологий</textarea> <br> <br>
+<input type="text" placeholder="Фамилия" name="surname" id="surname"> <br> <br>
+<input type="text" placeholder="Имя" name="name" id="name"> <br> <br>
+<label for="spec">Специальность</label>
+<select id="specion">
+<option>ИСИТ</option>
+<option>ПОИТ</option>
+<option>ПОИМБС</option>
+<option>ДЭВИ</option>
+
+</select> <br> <br>
+
+<label for="kurs">Курс</label> <br>
+<input type="radio" name="radio" id="kurs1" value="1" checked="1">1
+<input type="radio" name="radio" id="kurs3" value="2" >2
+<input type="radio" name="radio" id="kurs2" value="3" >3
+<input type="radio" name="radio" id="kurs4" value="4" >4 <br> <br>
+<label for="kurs">Предметы</label> <br>
+<input type="checkbox" name="checkbox" id="checkbox1" value="ОИТ"> ОИТ
+<input type="checkbox" name="checkbox" id="checkbox2" value="ОАИП"> ОАИП
+<input type="checkbox" name="checkbox" id="checkbox3" value="История"> История
+<input type="checkbox" name="checkbox" id="checkbox4" value="Физика"> Физика
+<input type="checkbox" name="checkbox" id="checkbox5" value="Математика"> Математика <br> <br>
+<input type="reset" value="Стереть" class="input_two"> <br><br>
+<input type="button" value="Отправить" class="input_three" onclick="fun1()">
+
+</form>
+</body>
+<script>
+
+
+function fun1() {
+let element1 = document.querySelector('#t1');
+let element2 = document.querySelector('#surname');
+let element3 = document.querySelector('#name');
+let element4 = document.querySelector('#specion');
+let kurs = document.getElementsByName('radio');
+let str_one=" ";
+
+
+for (let i = 0; i<kurs.length; i++) {
+if (kurs[i].checked){
+str_one += kurs[i].value + " ";
+}
+}
+let checked_1 = document.getElementsByName('checkbox');
+let empty_1 = " ";
+let empty_2 = " ";
+for (let i = 0; i < checked_1.length; i++) {
+if(checked_1[i].checked) {
+empty_1 += "<li>" + checked_1[i].value + "</li>";
+empty_2 += "<option>" + checked_1[i].value + "</option>";
+}
+}
+
+document.write(element1.value + "<br>" + element2.value + " " +element3.value + " " + element4.value + " " + str_one + "курс" + " "+ "Долженн сдавать следующие предметы : <ul> " + empty_1 + "</ul> <select> " + empty_2 + " </select> " );
+}
+</script>
+</html>

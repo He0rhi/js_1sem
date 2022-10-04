@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Калькулятор</title>
+    <script type='text/javascript'>
+        function fun1() {
+        let date = new Date();
+        let result = date.getDay();
+
+            switch (result) {
+            case 0:
+                alert("День недели: Воскресенье");
+                break;
+            case 1:
+                alert("День недели: Понедельник");
+                break;
+            case 2:
+                alert("День недели: Вторник");
+                break;
+            case 3:
+                alert("День недели: Среда");
+                break;
+            case 4:
+                alert("День недели: Четверг");
+                break;
+            case 5:
+                alert("День недели: Пятница");
+                break;
+            case 6:
+                alert("День недели: Суббота");
+                break;
+        }
+            
+        }
+
+    </script>
+
+</head>
+<body>
+    <input type="button" value="Который сейчас день недели?" onclick="fun1()"/>
+
+</body>
+</html>

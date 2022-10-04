@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+body{
+    background-image:url(https://img5.goodfon.ru/original/1680x1050/5/5d/gora-les-vyshki.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: 1650px 1080px;
+  background-color: #00091f;
+  text-decoration: none;
+  height: 2600px;
+}
+*{
+    margin: 0;
+    padding: 0;
+    
+    }
+    .head {
+        box-shadow: 0px 5px 10px 5px #143764;
+    padding-left: 10%;
+    padding-top: 1%;
+    font-family: 'Montserrat', sans-serif;
+    height: 100px;
+   
+    background-image: url(https://i.pinimg.com/originals/6b/8d/00/6b8d00f18707cce4a31ae301a0858d97.png);
+    background-size:cover;
+
+   color: white;
+  
+    }
+    
+   
+    
+    h1{
+    font-family: 'Montserrat', sans-serif;
+    }
+    .voer{
+    margin-top: 10px;
+    }
+    .logo{
+        font-size: 30px;
+        display: inline-block;
+
+    }
+    #logo{
+        width: 100px;
+        border-radius: 80px;
+        margin-top: -8px;
+        margin-left: -20px;
+    }
+
+  .dropmenu{
+      border: none;
+      background: none;
+      color: white;
+      font-size: 30px;
+  }
+
+  .vipadok_knopka{
+     padding-left: 97%;
+     
+     font-size: 40px;
+ }
+ .menu-item{
+     top: 4%;
+     right: 3%;
+     position: absolute;
+     
+ }
+ .vipadok{
+     width: 400px;
+     position: fixed;
+     height:115px ;
+     background-color:rgb(231, 250, 255) ;
+     top: 0px;
+     right: 0px;
+     color: #143764;
+     right: -400px;
+     
+ }
+ .vipadok_spicok{
+    list-style-type: none;
+    padding-left: 13px;
+   align-self: baseline;
+  
+   font-size: 30px;
+ }
+ #vipadok_a{
+     list-style-type: none;
+     text-decoration: none;
+     color:#1c4985 ;
+     border-bottom: 1px solid #1c4985  ;
+     
+ }
+ #vipadok_a:hover{
+    list-style-type: none;
+    text-decoration: none;
+    color:#0b1b31 ;
+    font-size: 29px;
+}
+ 
+
+ 
+.countries{
+    font-family: 'Montserrat', sans-serif;
+    
+    margin-top: 20px;
+    
+
+    
+    }
+.shoose{
+    display: inline-block;
+    margin:3%;
+    padding:20px;
+    margin-left: 230px;
+    border-radius: 10px;
+    background-color: #143764;
+    color: white;
+    font-size: 20px;
+    transition-property: all;
+  transition: all ease 0.3s;
+}
+
+.shoose:hover{
+    background-color:#bbd8ff ;
+    
+    transition: 0.3s;
+}
+
+.shooselogo{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 10px;
+    font-size: 40px;
+}
+.peizah{
+    width: 100%;
+  height: 1000px;
+  padding-top: 90px;
+  color: #143764;
+  
+}
+
+
+.gallerylogo{
+    font-family: 'Montserrat', sans-serif;
+color:white;
+font-size: 30px;
+margin-left: 40%;
+margin-top: 0px;
+
+}
+.shose{
+    display: inline-block;
+    margin:3%;
+    padding:5px;
+    margin-left:9.9%;
+    border-radius: 5px;
+    background-color: #bbd8ff;
+    color: #143764;
+    font-size: 20px;
+    transition-property: all;
+  transition: all ease 0.3s;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#francia{
+    color:white ;
+    padding: 20px;
+    transition: all ease 0.3s;
+    
+}
+#francia:hover{
+    color:#143764 ;
+    
+    transition: all ease 0.3s;
+    
+}
+#rossia{
+    color:white ;
+    padding: 20px;
+    transition: all ease 0.3s;
+    
+}
+#rossia:hover{
+    color:#143764 ;
+    
+    transition: all ease 0.3s;
+    
+}
+#aravia{
+    color:white ;
+    padding: 20px;
+    transition: all ease 0.3s;
+    
+}
+#aravia:hover{
+    color:#143764 ;
+    
+    transition: all ease 0.3s;
+    
+}
+
+.close{
+    border-radius: 10px;
+    background-color:#bbd8ff;
+    color: #143764;
+    font-size: 13px;
+    transition-property: all;
+  transition: all ease 0.3s;
+  text-decoration: none;
+  width: 107px;
+  font-family: 'Montserrat', sans-serif;
+  margin-left: 45%;
+  margin-top: 10%;
+}
+.close:hover{
+    color:#bbd8ff ;
+    background-color:#143764 ;
+    transition: all ease 0.3s;
+  text-decoration: none;
+  
+}
+#closed{
+    text-decoration: none;
+    font-size: 25px;
+    font-family: 'Montserrat', sans-serif;
+    color:#143764 ;
+    padding: 5px;
+    transition: all ease 0.3s;
+    
+}
+#closed:hover{
+    text-decoration: none;
+    color:#bbd8ff ;
+    
+    transition: all ease 0.3s;
+}
+
+#closedru{
+    text-decoration: none;
+    font-size: 25px;
+    font-family: 'Montserrat', sans-serif;
+    color:#143764 ;
+    padding: 5px;
+    transition: all ease 0.3s;
+}
+#closedru:hover{
+    text-decoration: none;
+    color:#e59bf7 ;
+    
+    transition: all ease 0.3s;
+}
+
+#closedaru{
+    text-decoration: none;
+    font-size: 25px;
+    font-family: 'Montserrat', sans-serif;
+    color:#143764 ;
+    padding: 5px;
+    transition: all ease 0.3s;
+}
+#closedaru:hover{
+    text-decoration: none;
+    color:#e59bf7 ;
+    
+    transition: all ease 0.3s;
+}
+
+
+
+.form{
+    width: 100%;
+    height: 900px;
+    background:white;
+    font-family: 'Montserrat', sans-serif;
+    display: none;
+text-align: center;
+}
+#golova-form{
+    text-align: center;
+    padding-top: 8%;
+    font-size: 30px;
+    padding-bottom: 2%;
+}
+
+  #input_shadow{
+     padding: 10px; 
+     margin: 10px 0;
+     border: 0px;
+     box-shadow:0 0 10px 10px rgba(0,0,0,0.06);
+     border-radius: 10px;
+  }
+  
+  textarea {
+    width:30%;
+    resize: vertical;
+    padding:15px;
+    border-radius:15px;
+    border:0;
+    box-shadow:0 0 10px 10px rgba(0,0,0,0.06);
+    height:150px;
+    
+  }
+  #form_all{
+      padding-left: 0;
+      top: 2000px;
+  }
+  #male{
+      margin-top: 10px;
+      left: -3px;
+  }
+  #female{
+      margin-top: 10px;
+      margin-bottom: 15px;
+      left: 10px;
+  }
+  #svoi{
+      margin-top: 10px;
+      margin-bottom: 10px;
+  }
+  #otpr{
+      display: block; 
+           margin-top: -30px;
+      margin-left: 80%;
+       border-radius: 5px;
+padding: 5px;
+background-color: rgb(247, 247, 247);
+border: 3px solid #eee;
+font-family: 'Montserrat', sans-serif;
+
+  }
+  #otpr:hover{
+      
+    background-color: rgb(240, 239, 239);
+    border: 3px solid rgb(211, 211, 211);
+  }
+  #footer{
+    background-image: url(https://i.pinimg.com/originals/6b/8d/00/6b8d00f18707cce4a31ae301a0858d97.png);
+    background-repeat: no-repeat;
+
+  background-size: cover;
+  background-size: 1650px 900px;
+  height: 48px;
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+  
+  }
+  
+
+  .male{
+      border: 1px solid #eee;
+      width: 200px;
+      margin-bottom: 30px;
+      margin-left:43.3%;
+      align-self: baseline;
+  }
+  
+  
+  

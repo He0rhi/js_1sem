@@ -1,0 +1,144 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    
+</head>
+<body bgcolor="#E0FFFF">
+
+    <script type="text/javascript">
+        function fun1() {
+             
+                alert('Вас привествует учебный центр');
+            
+             
+                x = prompt('Введите имя:', 'Имя');
+                document.write('Добро пожаловать на курсы, ' + x);
+            
+             
+             
+            if (confirm("Хотите стать Web-дизайнером? ")) {
+                alert("Учите стили CSS и JavaScript!");
+            }
+            else {
+                alert("Упускаете время!");
+            }
+            
+        }
+        function fun2() {
+            alert("Результат сложения чисел 10 и 5:"); alert(10 + 5);
+            alert("Результат сложения строк 10 и 5:"); alert("10" + "5");
+            alert("Результат сложения числа 22 и строки 5:"); alert(22 + "5");
+            alert("Результат сложения строки 22 и числа 5:"); alert("22" + 5);
+            alert("Вывод - Результатом сложения строки и числа всегда будет строка. ");
+        }
+        function fun3() {
+            let x = 24;
+            let y = 7;
+            let num1 = ((5 * y) + x * y);
+            alert("если x=24 и y=7,то (5*y) + x*y)=" + num1);
+            let num2 = ((4 * x - 36) / x);
+            alert("если x=12 и y=7,то (4 * x - 36) / x=" + num2);
+            let num3 = num1 % num2;
+            alert(num3);
+        }
+        function fun41() {
+            let num1;
+            num1 = prompt("Введите любое число");
+            if (((num1 < 20) || (num1 > 40)) && (num1 != 15) && (num1 % 5 == 0))
+                alert("Правильное значение");
+            else
+                alert("Неправильное значение");
+        }
+        function fun42() {
+            let num1;
+            num1 = prompt("Введите любое число");
+            if (((num1 > 10) || (num1 < 20)) && (num1 != 15) && (num1 % 4 == 0))
+                alert("Правильное значение");
+            else
+                alert("Неправильное значение");
+        }
+        function fun5() {
+            let x1 = prompt("Введите первое число: ");
+            let x2 = prompt("Введите второе число: ");
+            if (x1 > x2)
+                alert("А больше Б");
+
+            else if (x2 > x1)
+                alert("Б  больше А ");
+            else
+                alert("А и Б равны");
+            }
+        
+        function fun51() {
+            let x1 = prompt("Введите первое число: ");
+            let x2 = prompt("Введите второе число: ");
+            if (x1 * 2 > x2) 
+                alert("Произведение А на 2 больше Б");
+
+            else if (x2 > x1 * 2)
+                alert("Б  больше произведения А на 2 ");
+            else
+                alert("Произведение А на 2 и Б равны");
+            }
+        
+        function fun6() {
+            let date = new Date();
+            let result = date.getDay();
+
+            switch (result) {
+                case 0:
+                    alert("День недели: Воскресенье");
+                    break;
+                case 1:
+                    alert("День недели: Понедельник");
+                    break;
+                case 2:
+                    alert("День недели: Вторник");
+                    break;
+                case 3:
+                    alert("День недели: Среда");
+                    break;
+                case 4:
+                    alert("День недели: Четверг");
+                    break;
+                case 5:
+                    alert("День недели: Пятница");
+                    break;
+                case 6:
+                    alert("День недели: Суббота");
+                    break;
+            }
+        }
+            function fun7() {
+
+                try {
+                    alert("Ошибок в коде нет");
+                }
+                catch (err) {
+                    alert("Найдена ошибка в коде");
+                }
+            }
+
+        
+
+    </script>
+    <input type="button" value="Задание 1" onclick="fun1()" />
+    
+    <input type="button" value="Задание 2" onclick="fun2()" />
+    
+    <input type="button" value="Задание 3" onclick="fun3()" />
+    
+    <input type="button" value="Задание 4.1" onclick="fun41()" />
+    
+    <input type="button" value="Задание 4.2" onclick="fun42()" />
+    
+    <input type="button" value="Задание 5.1" onclick="fun5()" />
+    
+    <input type="button" value="Задание 5.2" onclick="fun51()" />
+    
+    <input type="button" value="Задание 6" onclick="fun6()" />
+    
+    <input type="button" value="Задание 7" onclick="fun7()" />
+</body>
+</html>

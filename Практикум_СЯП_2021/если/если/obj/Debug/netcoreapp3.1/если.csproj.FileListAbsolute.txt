@@ -1,0 +1,5 @@
+D:\Мои документы\БГТУ\лабы\Практикум_СЯП_2021\если\если\obj\Debug\netcoreapp3.1\если.csproj.AssemblyReference.cache
+D:\Мои документы\БГТУ\лабы\Практикум_СЯП_2021\если\если\obj\Debug\netcoreapp3.1\если.GeneratedMSBuildEditorConfig.editorconfig
+D:\Мои документы\БГТУ\лабы\Практикум_СЯП_2021\если\если\obj\Debug\netcoreapp3.1\если.AssemblyInfoInputs.cache
+D:\Мои документы\БГТУ\лабы\Практикум_СЯП_2021\если\если\obj\Debug\netcoreapp3.1\если.AssemblyInfo.cs
+D:\Мои документы\БГТУ\лабы\Практикум_СЯП_2021\если\если\obj\Debug\netcoreapp3.1\если.csproj.CoreCompileInputs.cache

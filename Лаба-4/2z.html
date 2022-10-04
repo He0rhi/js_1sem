@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <script type='text/javascript'>
+        
+        function Student(name, surname, physics, math, inform, rost) {
+            this.name = name;
+            this.surname = surname;
+            this.physics = physics;
+            this.math = math;
+            this.inform = inform;
+            this.rost = rost;
+            this.result = function res(kurs) {
+                let a =  Number((math + inform + physics) / 3);
+                document.write("Рост:" + rost + "," + "  средний балл: " + name + " " + surname + ": " + a.toFixed(1) + "," + "  pост:" + rost + ",");
+            }
+            
+        } 
+        let gr1 = new Student("Георгий", "Хващевский", 7, 8, 9, 183);
+        let gr2 = new Student("Тимофей", "Серемяжко", 9, 5, 9, 180);
+        let gr3 = new Student("Артем", "Струнин", 7, 8, 6, 178);
+        Student.prototype.kurs = this.kurs; 
+        gr1.kurs = 2;
+        gr2.kurs = 1;
+        gr3.kurs = 2;
+        gr1.result();
+        document.write(" группа " + gr1.kurs + "<br>");
+        gr2.result();
+        document.write(" группа " + gr2.kurs + "<br>");
+        gr3.result();
+        document.write(" группа " + gr3.kurs);
+        document.write("<br>");
+        document.write("Наличие toString in Student: ");
+        document.write('toString' in Student);
+        document.write("<br>");
+        document.write("Тип свойства name: " + typeof this.name);
+        document.write("<br>");
+        document.write("Тип свойства surname: " + typeof this.surname);
+        document.write("<br>");
+        document.write("Тип свойства physics: " + typeof this.physics);
+        document.write("<br>");
+        document.write("Тип свойства math: " + typeof this.math);
+        document.write("<br>");
+        document.write("Тип свойства inform: " + typeof this.inform);
+        
+    </script>
+    
+</body>
+</html>

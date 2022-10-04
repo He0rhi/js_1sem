@@ -1,0 +1,71 @@
+	<!DOCTYPE html>
+	<html>
+	<head>
+		<title>Document</title>
+		<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+	</head>
+	<body>
+		<img src='red.bmp' id='pix' style="position:relative;top:400px;left:-10px">
+		<form name='first'>
+	<input type="radio" name="line_type" value='x*x'>x^2
+	<input type="radio" name="line_type" value='x*x*x'>x^3
+	<input type="radio" name="line_type" value='Math.sin(x)'>SIN(X)
+	<input type="radio" name="line_type" value='Math.cos(x)'>COS(X)
+
+	<select>
+	<option value='red'>Красный</option>
+	<option value='green'>Зеленый</option>
+	<option value='blue'>Синий</option>
+	<option value='black'>Черный</option>
+	</select>
+	</form>
+	<BUTTON class="ajaxbutton">go</button>
+		<script type="text/javascript">
+
+			$(function() {
+		$('.ajaxbutton').click(function() {
+				let xst = parseInt(document.all['pix'].style.left);
+				let yst = parseInt(document.all['pix'].style.top);
+				let x, y;
+				x = xst;
+				y = yst;
+				radio = document.getElementsByName('line_type');
+				color = document.getElementsByTagName('option');
+				for(i=0;i<radio.length;i++)
+				if (radio[i].checked)
+				a = radio[i].value;
+			for(i=0;i<color.length;i++)
+	if (color[i].selected)
+	color = color[i].value;
+			if(a == 'x*x'){
+				for(var i = 0; i < 1000; i++){
+					$(document.body).append('<img src="'+color+'.bmp" style="position:relative;top:'+y+'px;left:'+x+'px">')
+					x+=0.1;
+					y = yst+(Math.pow(x, 2)*15);
+			}
+		}
+		if(a=='x*x*x'){
+			for(var i = 0; i < 1000; i++){
+				$(document.body).append('<img src="'+color+'.bmp" style="position:relative;top:'+y+'px;left:'+x+'px">')
+				x+=0.1;
+				y= yst+ (Math.pow(x,3)*15);
+			}	
+		}
+		if(a=='Math.sin(x)'){
+			for(var i = 0; i < 500; i++){
+				$(document.body).append('<img src="'+color+'.bmp" style="position:relative;top:'+y+'px;left:'+x+'px">')
+				x+=0.1;
+				y= yst+ (Math.sin(x)*15);
+			}	
+		}
+		if(a=='Math.cos(x)'){
+			for(var i = 0; i < 1000; i++){
+				$(document.body).append('<img src="'+color+'.bmp" style="position:relative;top:'+y+'px;left:'+x+'px">')
+				x+=0.1;
+				y= yst+ (Math.cos(x)*15);
+			}	
+		}
+	});});
+		</script>
+	</body>
+	</html>

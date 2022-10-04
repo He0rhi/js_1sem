@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+   <head>
+
+   </head>
+ <body>
+    
+    <table width="60%" border="5" align="left" cellspacing="10" id="table">
+    <tr text-align="center" >
+    <th><span id="first">Предметы</span></th>
+    <th>Баллы</th>
+    </tr>
+    <tr>
+    <td><span >Физика</span></td>
+    <td id="second" class="sr_bl">8</td>
+    </tr>
+    <tr>
+    <td>География</td>
+    <td class="sr_bl">9</td>
+    </tr>
+    <tr>
+    <td>История</td>
+    <td class="sr_bl">8</td>
+    </tr>
+    <tr>
+    <td>Физкультура</td>
+    <td class="sr_bl"> 10</td>
+    </tr>
+    <tr>
+    <td>Химия</td>
+    <td class="sr_bl">6</td>
+    </tr>
+    </table>
+    <div class="class1">
+    <input type="button" name="" onclick="fun1()" value="1 задание">
+    <input type="button" name="" onclick="fun2()" value="2 задание">
+    <input type="button" name="" onclick="fun3()" value="3 задание">
+    <input type="button" name="" onclick="fun4()" value="4 задание">
+    </div>
+    
+    <script type="text/javascript">
+    function fun1()     //Вывести на экран все тэги и их номера в коллекции all своей первой web-страницы.
+    {
+    for (let i = 0; i < document.all.length; i++)
+    {
+    alert("Тэг номер " + (i + 1) + ": " + document.all[i].tagName);
+    }
+    }
+
+
+//......................................//
+
+    
+    function fun2() // Вывести все дочерние элементы узла document.body своей первой web-страницы.
+    {
+    for(let i = 0; i < document.body.childNodes.length; i++)
+    {
+    alert(document.body.childNodes[i]);
+    }
+    }
+
+//......................................//
+
+//Вывести в окно содержимое первого элемента span
+    function fun3()
+    {
+
+    alert(document.querySelector("span").innerHTML);  //используя для доступа к элементу коллекцию all;
+
+    alert (document.getElementsByTagName("span")[0].innerHTML); //используя частную коллекцию (span);
+
+    alert(document.getElementById("first").innerHTML); // используя идентификатор элемента.
+    
+    }
+
+
+//......................................//
+
+
+    function fun4()
+    {
+    let avr = 0;
+    for (let i = 0; i < 5; i++ )
+    {
+    let el = Number(document.getElementsByClassName("sr_bl")[i].innerText);
+    avr += el;
+    }
+    alert(" Средний балл: "+ (avr/5)); // Организовать доступ к содержимому таблицы и посчитать свой средний балл
+
+    alert(document.getElementsByTagName('span')[1].innerHTML+=" Средний балл: "+ (avr/5));  // Добавить значение среднего балла к содержимому второго элемента span
+    }
+    </script>
+ </body>
+    </html>

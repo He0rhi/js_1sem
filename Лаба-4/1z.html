@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <script type='text/javascript'>
+
+        function Gruppa(n, spec, kolich) {
+            this.n = n;
+            this.spec = spec;
+            this.kolich = kolich;
+            this.sub_stud = function sub_stud(k) {
+                this.kolich -= k;
+                document.write('Из группы ' + this.n + ' исключили ' + k + ' студентов.<br\>');
+            }
+            this.add_stud = function add_stud(j) {
+                this.kolich += j;
+                document.write('В группу ' + this.n + ' добавили' + j + ' студентов.<br\>');
+            }
+        }
+        gr1 = new Gruppa(1, "ПОИТ", 30);
+        gr2 = new Gruppa(2, "ИСиТ", 28);
+        gr3 = new Gruppa(3, "ДЭИВИ", 32);
+        gr1.sub_stud(5);
+        gr2.add_stud(3);
+        gr3.sub_stud(6);
+        document.write("ПОИТ: " + gr1.kolich + "<br>");
+        document.write("ИСиТ: " + gr2.kolich + "<br>");
+        document.write("ДЭИВИ: " + gr3.kolich + "<br>");
+        document.write("Typeof Gruppa: " + typeof Gruppa + "<br>");
+        document.write("Typeof gr1: " + typeof gr1 + "<br>");
+        document.write("Наличие toString in Gruppa: ");
+        document.write('toString' in Gruppa);
+        
+
+    </script>
+</body>
+</html>

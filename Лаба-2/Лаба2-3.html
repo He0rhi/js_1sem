@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Площадь круга</title>
+    <style>
+        td {
+            width: 33%;
+            border: 1px solid black;
+        }
+        table {
+            border: 1px solid black;
+            width:100%;
+            text-align:center;
+        }
+    </style>
+</head>
+<body>
+    <script type="text/javascript">
+        let a = prompt("Введите число а:",);
+        let b = prompt("Введите число b:",);
+        document.write("<table>");
+        document.write("<tr>");
+        document.write("<td>" + "Радиус" + "</td>");
+        document.write("<td>" + "Площадь круга" + "</td>");
+        document.write("<td>" + "Длина окружности" + "</td>");
+        document.write("</tr>");
+        
+         
+        let i = a; 
+        do {
+            document.write("<tr>");
+            document.write("<td>" + i + "</td>");
+            document.write("<td>" + Math.PI * Math.pow(i, 2) + "</td>");
+            document.write("<td>" + Math.PI * i * 2 + "</td>");
+            document.write("</tr>");
+            i += 0.3;
+
+        }
+
+        while (i <= b );
+            
+        
+    </script>
+
+
+</body>
+</html>

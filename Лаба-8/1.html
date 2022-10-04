@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="UTF-8">
+        <title>8</title>
+        <style type="text/css">
+
+
+        </style>
+    </head>
+    <body>
+        1 задание<br>
+        <div id="Color">
+<h1>Цвет текста изменяется на красный</h1>
+        </div>
+        -------------------------------------------<br><br>
+        2 задание
+        <div id="size">
+            <h1>Размер этого текста изменится по щелчку мыши</h1>
+        </div>
+        <br>
+        -------------------------------------------<br><br>
+        3 задание <br><br>
+        
+        <img id="image" src="viper.jpg" width="250px" height="170px" onClick="imgsrc()"><br><br>
+        -------------------------------------------<br><br>
+        4 задание <br><br>
+
+        <div id="zamena"> <h1>Замена текста на изображение</h1>
+         </div><br>
+         ------------------------------------------<br><br>
+         5 задание<br><br>
+
+         <div id="onmouse"> <img width="200px" id="imege" src="viper.jpg">
+         
+      </div><br><br>
+      ------------------------------------------<br><br>
+      6 задание<br><br>
+
+<div id="bord"><h1>Рамка вокруг текса при двойном нажатии</h1></div>
+
+
+    
+
+
+
+
+
+        <script type="text/javascript">
+           
+
+//первое задание
+let slovo=document.getElementById("Color");
+slovo.onmouseover = ()=>
+{
+    slovo.style.color="red";
+}
+slovo.onmouseout=()=>{
+    slovo.style.color="black";
+}
+//второе задание     
+            let sizein=document.getElementById("size");
+            sizein.onclick = () => {
+                sizein.style.fontSize="35px";
+            }
+//третье задание  
+            let i=0;
+        let image=document.getElementById("image");
+        let imgs=Array('viper.jpg','маруся.jpg');
+        function imgsrc() {
+            i++;i<imgs.length;
+            image.src = imgs[i];
+            
+        }
+
+
+//четвёртое задание  
+ document.getElementById("zamena").onclick=() => {
+     document.getElementById("zamena").innerHTML="<img  width=250px src='viper.jpg'>"
+ }
+
+
+
+
+//пятое задание  
+window.onload =()=> {
+    let image = document.getElementById("imege");
+    let max = "300px";
+    let min = "250px";
+    image.onmouseover = function(){
+        this.style.width = max;
+    };
+    image.onmouseout = function(){
+        this.style.width = min;
+    };
+};
+
+//шестое задание  
+let bordd=document.getElementById("bord");
+bordd.ondblclick = ()=>
+{
+    bordd.style.border="2px solid red";
+}
+
+
+        </script>
+    </body>
+</html>

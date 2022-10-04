@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    
+    <meta charset="UTF-8">
+    <title>Лаботароная работа 3</title>
+    
+</head>
+<body>
+
+    <script>
+        function fun1() {
+            let spec = new Array(3);
+            spec[0] = 6 * Math.pow(Math.PI, 2) + 3 * Math.pow(Math.E, 8);
+            spec[1] = 2 * Math.cos(4) + Math.cos(12) + 8 * Math.pow(Math.E, 3);
+            spec[2] = 3 * Math.sin(9) + Math.log(5) + Math.sqrt(3);
+            spec[3] = 2 * Math.tan(5) + 6 * Math.PI + Math.sqrt(12);
+            let min = spec[0];
+            let max = spec[0];
+            let kmax = 0, kmin=0;
+            for (let i = 1; i < spec.length; i++) {
+                if (spec[i] > max) { max = spec[i]; kmax = i; }
+                else if (spec[i] < min) { min = spec[i]; kmin = i; }
+            }
+
+            document.write("Максимальный элемент массива: ", max + "<br>");
+            document.write("Минималььный элемент массива: ", min + "<br>");
+            document.write("Номер максимального элемента массива: ", kmax + "<br>");
+            document.write("Номер минимального элемента массива: ", kmin);
+        }
+
+        function fun2() {
+            let gspec = ["contac", "pop", "push", "shuift", "slice", "sort", "pow", "cos", "tan", "round"];
+            let garray = ["contac", "pop", "push", "shuift", "slice", "sort"];
+            let gmath = ["pow", "cos", "tan", "round"];
+            let marray =  Array(...garray);
+            let mmath =  Array(...gmath);
+            let mspec =  Array(...gspec);
+            marray.unshift("unshift");
+            
+            mmath.push("ceil");
+            document.write("Исходный массив: " + mspec + "<br>");
+            document.write("Методы Array: " + marray + "<br>");
+            document.write("Методы Math: " + mmath + "<br>");
+            document.write("Количество элементов 1 массива: " + mspec.length + "<br>");
+            document.write("Количество элементов 2 массива: " + marray.length + "<br>");
+            document.write("Количество элементов 3 массива: " + mmath.length + "<br>");
+        }
+
+        function fun3() {
+
+            let str = new String("Хващевский Георгий Андреевич");
+
+            let strup = str.toUpperCase();
+
+            let strlow = str.toLowerCase();
+
+            let sumstr = strup.concat(strlow);
+            document.write("Длинна строки: ", str.length + "<br>");
+            document.write(str + "<br>");
+            document.write(strup + "<br>");
+            document.write(strlow + "<br>");
+            document.write(sumstr + "<br>");
+
+            document.write(str.replace("Хващевский Георгий Андреевич", "ФИО") + "<br>");
+        }
+
+        function fun4() {
+            let a = new Date();
+
+            let month = parseInt(a.getMonth()) + 1;
+            document.write("<table>" + "<tr>" + "<td>" + "Год" + "</td>" + "<td>" + a.getFullYear() + "</td>" + "</tr>");
+            document.write("<tr>" + "<td>" + "Месяц" + "</td>" + "<td>" + month + "</td>" + "</tr>");
+            document.write("<tr>" + "<td>" + "День" + "</td>" + "<td>" + a.getDate() + "</td>" + "</tr>");
+            document.write("<tr>" + "<td>" + "Час" + "</td>" + "<td>" + a.getHours() + "</td>" + "</tr>");
+            document.write("<tr>" + "<td>" + "Минуты" + "</td>" + "<td>" + a.getMinutes() + "</td>" + "</tr>");
+            document.write("<tr>" + "<td>" + "Секунды" + "</td>" + "<td>" + a.getSeconds() + "</td>" + "</tr>" + "</table>");
+        }
+
+        
+        
+    </script>
+    <input type="button" value="1 задание" onclick="fun1()"><br>
+    <input type="button" value="2 задание" onclick="fun2()"><br>
+    <input type="button" value="3 задание" onclick="fun3()"><br>
+    <input type="button" value="4 задание" onclick="fun4()"><br>
+    
+</body>
+</html>

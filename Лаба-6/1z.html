@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head></head>
+<body>
+<div class="div1">
+    <p>Задание-1</p>
+<input type="button" onclick="fun1()" value="Автомобиль">
+<input type="button" onclick="fun2()" value="Закрыть"><br>
+<input type="button" onclick="fun3()" value="Квартира">
+<input type="button" onclick="fun4()" value="Закрыть"><br>
+<input type="button" onclick="fun5()" value="Гора">
+<input type="button" onclick="fun6()" value="Закрыть">
+</div>
+<script type="text/javascript">
+    var win1;
+    var win2;
+    var win3;
+    var win4;
+    var win5;
+    var win6;
+function fun1(){
+ win1 = window.open("", "Автомобиль", "width=500, height =200");
+win1.document.write("Автомобилей во всем мире слишком много. Имя окна:  "+ win1.name + ".");
+
+}
+function fun2(){
+    win1.close();
+}
+function fun3(){
+ win2 = window.open("", "Квартира", "width=500, height =200" );
+win2.document.write("В квартирах всегда должно быть тепло. Имя окна:  "+ win2.name + ".");
+}
+function fun4(){
+    win2.close();
+}
+function fun5(){
+ win3 = window.open("", "Гора", "width=500, height =200" );
+win3.document.write("Самая высокая гора Джамалунгма. Имя окна:  "+ win3.name + ".");
+}
+function fun6(){
+    win3.close();
+}
+
+
+</script>
+<div><p>---------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p></div>
+<div><p>Второе задание</p></div>
+<table width="1080px" border="5" align="left" cellspacing="10" id="table">
+    <tr text-align="center" >
+    <th>Cвойство</th>
+    <th>Значение</th>
+    </tr>
+    <tr>
+    <td>UserAgent</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>AppVersion</td>
+    <td>...</td>
+    </tr>
+    <tr>
+    <td>AppName</td>
+    <td>...</td>
+    </tr>
+    <tr>
+    <td>AppCodeName</td>
+    <td>...</td>
+    </tr>
+    <tr>
+    <td>Platform</td>
+    <td>...</td>
+    </tr>
+    <tr>
+        <td>JavaEnabled()</td>
+        <td>...</td>
+    </tr>
+    <tr>
+        <td>Width</td>
+        <td>...</td>
+    </tr>
+    <tr>
+        <td>Height</td>
+        <td>...</td>
+    </tr>
+    <tr>
+        <td>ColorDepth</td>
+        <td>...</td>
+    </tr>
+    <tr>
+        <td>History</td>
+        <td>...</td>
+    </tr>
+    <tr>
+        <td>Location</td>
+        <td>...</td>
+    </tr>
+    <tr>
+        <td>Hathnam</td>
+        <td>...</td>
+    </tr>
+    <tr>
+        <td>Host</td>
+        <td>...</td>
+    </tr>
+
+    </table>
+    <script type="text/javascript">
+        
+        document.all.table.rows[1].cells[1].innerText=window.navigator.userAgent;
+        document.all.table.rows[2].cells[1].innerText=window.navigator.appVersion;
+        document.all.table.rows[3].cells[1].innerText=window.navigator.appName;
+        document.all.table.rows[4].cells[1].innerText=window.navigator.appCodeName;
+        document.all.table.rows[5].cells[1].innerText=window.navigator.platform;
+        document.all.table.rows[6].cells[1].innerText=window.navigator.javaEnabled();
+        document.all.table.rows[7].cells[1].innerText=window.screen.width;
+        document.all.table.rows[8].cells[1].innerText=window.screen.height;
+        document.all.table.rows[9].cells[1].innerText=window.screen.colorDepth;
+        document.all.table.rows[10].cells[1].innerText=window.history.length;
+        document.all.table.rows[11].cells[1].innerText=window.location.href;
+        document.all.table.rows[12].cells[1].innerText=window.location.pathname;
+        document.all.table.rows[13].cells[1].innerText=window.location.hostname;
+        
+        </script>
+</body>
+    
+</html>

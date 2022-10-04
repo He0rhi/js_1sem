@@ -1,0 +1,48 @@
+﻿+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+    <script type='text/javascript'>
+        let spec = new Array();
+        spec[0] = ("concat");
+        spec[1] = ("pop");
+        spec[2] = ("push");
+        spec[3] = ("shift");
+        spec[4] = ("slice");
+        spec[5] = ("sort");
+        spec[6] = ("pow");
+        spec[7] = ("E");
+        spec[8] = ("cos");
+        spec[9] = ("tan");
+
+        document.write(spec + "<br>");
+        function fun1() {
+            alert(5);
+        }
+        delete spec[3];
+        document.write(spec + "<br>");
+        document.write("Второй объект в массиве spec:")
+        document.write([2] in spec);
+        document.write("<br>")
+        document.write("String в массиве spec:")
+        document.write(spec instanceof String);
+        document.write("<br>")
+        document.write("Array в массиве spec:")
+        document.write(spec instanceof Array);
+        document.write("<br>")
+        document.write("Object в массиве spec:")
+        document.write(spec instanceof Object);
+        document.write("<br>")
+        document.write("Тип объекта fun1(): " + typeof function () { });
+        document.write("<br>")
+        document.write("Тип объекта spec: " + typeof spec);
+       
+
+    </script>
+    <br>
+    <br>
+    <input type="button" value="Вывести значение 5" onclick="fun1()"><br>
+</body>
+</html>

@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script src="D:\МОИ ДОКУМЕНТЫ\БГТУ\лабы\лабы Жиляк\jquery\jquery-3.6.0.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+  <script type = "text/javascript" 
+         src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+      </script>
+		
+      <script type = "text/javascript" 
+         src = "https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js">
+      </script>
+        </head>
+
+        
+        
+
+
+<link rel="stylesheet" href="css/styles.css">
+
+<body>
+   <script src="js/js.js"></script>
+   
+<div class="all">
+ <div class="head">
+     
+    <div class="logo"><img id="logo" src="img/logoza..png" alt="" ></div>
+    
+    
+ <div class="menu-item">   
+         <a class="vipadok_knopka">☰</a>    
+  </div>
+ <div class="vipadok">
+  <ul class="vipadok_spicok">
+    <li><a id="vipadok_a" href="#">О нас</a></li>
+    <li><a id="vipadok_a" href="#">Агенства</a></li>
+    <li><a id="vipadok_a" href="#">Контакты</a></li>
+  </ul>
+</div>
+<script>
+  $( ".vipadok_knopka" ).click	(function() {
+            
+            $( ".vipadok" ).animate({ "right": "+=200px" }, 200 );
+            $(".menu-item").animate({"right": "+=200px"},200);
+            
+            $( ".vipadok_knopka" ).click	(function() {
+            
+            $( ".vipadok" ).animate({ "right": "-=400px" }, 100 );
+            $(".menu-item").animate({"right": "-=400px"}, 100);
+            
+            
+            }
+          );
+            
+            }
+          );
+</script>
+
+ 
+    
+      </div>
+<div class="peizah">
+    
+  <div class="shooselogo">Выберите страну для посещения</div>
+    <div class="countries">
+  <div class="shoose"><a id="francia" style="text-decoration: none; " href="javascript:showhide('franci')">Франция</a></div>
+  <script>
+    document.querySelector("#francia").addEventListener("click", () => {
+
+
+window.scroll({
+top: 1000,
+behavior: 'smooth'
+})
+
+})
+  </script>
+  <script>
+    $("#francia").click(function(){
+      $("#france").show("drop", {direction:"up"}, 1000);
+    })
+  </script>
+  
+  <div class="shoose"><a id="rossia" style="text-decoration: none; " href="javascript:showhide('russia')">Россия</a></div>
+
+  <script>
+    document.querySelector("#rossia").addEventListener("click", () => {
+
+
+window.scroll({
+top: 1000,
+behavior: 'smooth'
+})
+
+})
+  </script>
+  <script>
+    $("#rossia").click(function(){
+      $("#russia").show("drop", {direction:"up"}, 1000);
+    })
+  </script>
+  
+  <div class="shoose"><a id="aravia" style="text-decoration: none;" href="javascript:showhide('arabia')">Саудовская Аравия</a></div>
+  <script>
+    document.querySelector("#aravia").addEventListener("click", () => {
+
+
+window.scroll({
+top: 1000,
+behavior: 'smooth'
+})
+
+})
+  </script>
+  <script>
+    $("#aravia").click(function(){
+      $("#arabia").show("drop", {direction:"up"}, 1000);
+    })
+  </script>
+    
+</div>
+</div>
+<div class="gallery">
+  <div id="france" style="display: none;">
+        <div class="gallerylogo">Выберите город</div>
+    <div id="cities">
+     <div class="shose"><figcaption><video width="250" id="videoparis"><source src="img/paris.mp4" type="video/mp4"></video><figure style="text-align: center;">Париж</figure></figcaption></div>
+      <script>
+        let videoparis = document.getElementById("videoparis"); 
+        
+        videoparis.onmouseover = function(){
+          videoparis.play(); 
+        };
+        
+        
+        </script>
+        <script>
+          document.querySelector("#videoparis").addEventListener("click", () => {
+      
+      
+      window.scroll({
+      top: 1780,
+      behavior: 'smooth'
+      })
+      
+      })
+        </script>
+        <script>
+          $("#videoparis").click(function(){
+            $(".form").show("fade", {direction:"up"}, 1500);
+          })
+        </script>
+
+
+     
+     <div class="shose"><figcaption><video width="250" id="videonicca"><source src="img/nice.mp4" type="video/mp4"></video><figure style="text-align: center;">Ницца</figure></figcaption></div>
+     <script>
+      let videonicca = document.getElementById("videonicca"); 
+      
+      videonicca.onmouseover = function(){
+        videonicca.play(); 
+      };
+      
+      
+      
+      </script>
+      <script>
+        document.querySelector("#videonicca").addEventListener("click", () => {
+    
+    
+    window.scroll({
+    top: 1780,
+    behavior: 'smooth'
+    })
+    
+    })
+      </script>
+      <script>
+        $("#videonicca").click(function(){
+          $(".form").show("fade", {direction:"up"}, 1500);
+        })
+      </script>
+     <div class="shose"><figcaption><video width="250" id="videomarcel"><source src="img/marcel.mp4" type="video/mp4"></video><figure style="text-align: center;">Марсель</figure></figcaption></div>
+     <script>
+      let videomarcel = document.getElementById("videomarcel"); 
+      
+      videomarcel.onmouseover = function(){
+        videomarcel.play(); 
+      };
+      
+      
+      </script>
+      <script>
+        document.querySelector("#videomarcel").addEventListener("click", () => {
+    
+    
+    window.scroll({
+    top: 1780,
+    behavior: 'smooth'
+    })
+    
+    })
+      </script>
+      <script>
+        $("#videomarcel").click(function(){
+          $(".form").show("fade", {direction:"up"}, 1500);
+        })
+      </script>
+     <div  class="close"><a  id="closed">Скрыть</a></div>
+     <script> document.querySelector("#closed").addEventListener("click", () => {
+
+
+      window.scroll({
+      top: 0,
+      behavior: 'smooth'
+      })
+      
+      })</script>
+      <script>
+        $("#closed").click(function(){
+          $("#france").hide("drop", {direction:"up"}, 300);
+        })
+      </script>
+  </div>
+</div> 
+<div id="russia" style="display: none;">
+  <div class="gallerylogo">Выберите город</div>
+<div id="cities">
+<div class="shose"><figcaption><video width="250" id="videomoscow"><source src="img/moscow.mp4" type="video/mp4"></video><figure style="text-align: center;">Москва</figure></figcaption></div>
+<script>
+  let videomoscow = document.getElementById("videomoscow"); 
+  
+  videomoscow.onmouseover = function(){
+    videomoscow.play(); 
+  };
+  
+ 
+  </script>
+  <script>
+    document.querySelector("#videomoscow").addEventListener("click", () => {
+
+
+window.scroll({
+top: 1780,
+behavior: 'smooth'
+})
+
+})
+  </script>
+  <script>
+    $("#videomoscow").click(function(){
+      $(".form").show("fade", {direction:"up"}, 1500);
+    })
+  </script>
+<div class="shose"><figcaption><video width="250" id="videopiter"><source src="img/piter.mp4" type="video/mp4"></video><figure style="text-align: center;">Питер</figure></figcaption></div>
+<script>
+  let videopiter = document.getElementById("videopiter"); 
+  
+  videopiter.onmouseover = function(){
+    videopiter.play(); 
+  };
+  </script>
+  <script>
+    document.querySelector("#videopiter").addEventListener("click", () => {
+
+
+window.scroll({
+top: 1780,
+behavior: 'smooth'
+})
+
+})
+  </script>
+  <script>
+    $("#videopiter").click(function(){
+      $(".form").show("fade", {direction:"up"}, 1500);
+    })
+  </script>
+<div class="shose"><figcaption><video width="250" id="videokazan"><source src="img/kazan.mp4" type="video/mp4"></video><figure style="text-align: center;">Казань</figure></figcaption></div>
+<div class="close"><a  id="closedru">Скрыть</a></div>
+<script>
+  let videokazan = document.getElementById("videokazan"); 
+  
+  videokazan.onmouseover = function(){
+    videokazan.play(); 
+  };
+  </script>
+<script> document.querySelector("#closedru").addEventListener("click", () => {
+
+
+  window.scroll({
+  top: 0,
+  behavior: 'smooth'
+  })
+  
+  })</script>
+  <script>
+    $("#closedru").click(function(){
+      $("#russia").hide("drop", {direction:"up"}, 300);
+    })
+  </script>
+
+</div>
+</div>
+<div id="arabia" style="display: none;">
+  <div class="gallerylogo">Выберите город</div>
+<div id="cities">
+<div class="shose"><figcaption><video width="250" id="videoriad"><source src="img/er-riad.mp4" type="video/mp4"></video><figure style="text-align: center;">Эр-Рияд</figure></figcaption></div>
+<script>
+  let videoriad = document.getElementById("videoriad"); 
+  
+  videoriad.onmouseover = function(){
+    videoriad.play(); 
+  };
+  </script>
+  <script>
+    document.querySelector("#videoriad").addEventListener("click", () => {
+
+
+window.scroll({
+top: 1780,
+behavior: 'smooth'
+})
+
+})
+  </script>
+  <script>
+    $("#videoriad").click(function(){
+      $(".form").show("fade", {direction:"up"}, 1500);
+    })
+  </script>
+<div class="shose"><figcaption><video width="250" id="videojidda"><source src="img/jidda.mp4" type="video/mp4"></video><figure style="text-align: center;">Джидда</figure></figcaption></div>
+<script>
+  let videojidda = document.getElementById("videojidda"); 
+  
+  videojidda.onmouseover = function(){
+    videojidda.play(); 
+  };
+  </script>
+  <script>
+    document.querySelector("#videojidda").addEventListener("click", () => {
+
+
+window.scroll({
+top: 1780,
+behavior: 'smooth'
+})
+
+})
+  </script>
+  <script>
+    $("#videojidda").click(function(){
+      $(".form").show("fade", {direction:"up"}, 1500);
+    })
+  </script>
+<div class="shose"><figcaption><video width="250" id="videomekka"><source src="img/mekka.mp4" type="video/mp4"></video><figure style="text-align: center;">Мекка</figure></figcaption></div>
+<script>
+  let videomekka = document.getElementById("videomekka"); 
+  
+  videomekka.onmouseover = function(){
+    videomekka.play(); 
+  };
+  </script>
+  <script>
+    document.querySelector("#videomekka").addEventListener("click", () => {
+
+
+window.scroll({
+top: 1780,
+behavior: 'smooth'
+})
+
+})
+  </script>
+  <script>
+    $("#videomekka").click(function(){
+      $(".form").show("fade", {direction:"up"}, 1500);
+    })
+  </script>
+<div class="close"><a id="closedaru" href="javascript:hide('arabia')">Скрыть</a></div>
+<script> document.querySelector("#closedaru").addEventListener("click", () => {
+
+
+  window.scroll({
+  top: 0,
+  behavior: 'smooth'
+  })
+  
+  })</script>
+  <script>
+    $("#closedaru").click(function(){
+      $("#arabia").hide("drop", {direction:"up"}, 300);
+    })
+  </script>
+</div>
+
+</div>
+
+<div class="form">
+
+
+  <p id="golova-form">Введите нужные данные для заказа оттеля</p> 
+  <form action="" id="form_all">
+<p>E-mail<br>  <input id="input_shadow" type="mail" name="login"></p>
+<p>Номер телефона<br> <input id="input_shadow" type="mail"></p>
+<p>Фамилия<br> <input id="input_shadow" type="text" ></p>
+<p>Имя <br><input id="input_shadow" type="text" ></p>
+<p id="svoi">Пол</p> <div class="male">
+  
+<input type="radio" id="male" name="gender" value="male">
+  <label for="male">Мужчина</label><br>
+  <input type="radio" id="female" name="gender" value="female">
+  <label for="female">Женщина</label><br>
+</div>
+  <textarea id="comm" placeholder="Пожелания?"></textarea><br>
+  <input type="submit" id="otpr"  value="Отправить">
+ 
+  
+</form>
+
+
+
+
+</div>
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+</body>
+</html>

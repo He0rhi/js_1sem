@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Задание 4</title>
+	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+	<script>
+var a;
+setInterval(function(){$( document ).ready	(function() {
+a=10;
+for(var i=0;i<6;i++)
+ { 
+  $( "#block" ).animate({ "left": "+=100px","top":"+="+a+"px" }, "fast" );
+ a=parseInt(a)*2;
+  }
+  $( "#block" ).animate({ "left": "5px","top":"5px" }, "fast" );
+}),1000})
+</script>
+<style>
+div{
+   position: absolute;
+}
+</style>
+</head>
+<body>
+	<div id="block">
+		<img src="photo2.jpg" style="width: 200px; height: 100px;">
+	</div>
+</body>
+</html>

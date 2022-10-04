@@ -1,0 +1,92 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <style>
+        td {
+            width: 33.33%;
+            border: 1px solid black;
+        }
+
+        table {
+            border: 1px solid black;
+            width: 100%;
+            text-align: center;
+        }
+    </style>
+    <meta charset="utf-8" />
+    <title>Лаба2-4</title>
+</head>
+<body>
+    <script type="text/javascript">
+        x = new Number(127.18);
+        y = new Number(127);
+        document.write("<table>");
+        document.write("<td>" + "Число" + "</td>");
+        document.write("<td>" + "Метод" + "</td>");
+        document.write("<td>" + "Результат" + "</td>");
+        document.write("<td>" + "Описание метода" + "</td>");
+        document.write("</tr>");
+
+
+        document.write("<tr>");
+        document.write("<td>" + 127.18 + "</td>");
+        document.write("<td>" +  "toString(16)" + "</td>");
+        document.write("<td>" + x.toString(16) + "</td>");
+        document.write("<td>" + "Строковое представление числа в  16-ти ричной системе счисления " + "</td>");
+        document.write("</tr>");
+
+        document.write("<tr>");
+        document.write("<td>" + 127 + "</td>");
+        document.write("<td>" + "toString(16)" + "</td>");
+        document.write("<td>" + y.toString(16) + "</td>");
+        document.write("<td>" + "Строковое представление числа в  16-ти ричной системе счисления " + "</td>");
+        document.write("</tr>");
+        
+        document.write("<tr>");
+        document.write("<td>" + 127.18 + "</td>");
+        document.write("<td>" + "toExponential(3)" + "</td>");
+        document.write("<td>" + x.toExponential(3) + "</td>");
+        document.write("<td>" + "Представляет число в экспоненциальной  форме " + "</td>");
+        document.write("</tr>");
+        
+        document.write("<tr>");
+        document.write("<td>" + 127 + "</td>");
+        document.write("<td>" + "toExponential(3)" + "</td>");
+        document.write("<td>" + y.toExponential(3) + "</td>");
+        document.write("<td>" + "Представляет число в экспоненциальной  форме " + "</td>");
+        document.write("</tr>");
+        
+        document.write("<tr>");
+        document.write("<td>" + 127.18 + "</td>");
+        document.write("<td>" + "toFixed(3)" + "</td>");
+        document.write("<td>" + x.toFixed(3) + "</td>");
+        document.write("<td>" + "Представляет число в форме с фиксированным количеством цифр после точки" + "</td>");
+        document.write("</tr>");
+        
+        document.write("<tr>");
+        document.write("<td>" + 127 + "</td>");
+        document.write("<td>" + "toFixed(3)" + "</td>");
+        document.write("<td>" + y.toFixed(3) + "</td>");
+        document.write("<td>" + "Представляет число в форме с фиксированным количеством цифр после точки" + "</td>");
+        document.write("</tr>");
+       
+        document.write("<tr>");
+        document.write("<td>" + 127.18 + "</td>");
+        document.write("<td>" + "toPrecision(3)" + "</td>");
+        document.write("<td>" + x.toPrecision(3) + "</td>");
+        document.write("<td>" + "Представляет число с заданным общим количеством значащих цифр" + "</td>");
+        document.write("</tr>");
+        
+        document.write("<tr>");
+        document.write("<td>" + 127 + "</td>");
+        document.write("<td>" + "toPrecision(3)" + "</td>");
+        document.write("<td>" + y.toPrecision(3) + "</td>");
+        document.write("<td>" + "Представляет число с заданным общим количеством значащих цифр " + "</td>");
+        document.write("</tr>");
+        document.write("</table>");
+        
+        
+        </script>
+</body >
+</html >
